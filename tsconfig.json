@@ -4,16 +4,16 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "outDir": "../lib/",
-        "sourceMap": true
+        "outDir": "./lib/",
+        "sourceMap": false
     },
     "filesGlob": [
-        "./**/*.ts",
+        "./src/**/*.ts",
         "!./node_modules/**/*.ts"
     ],
     "files": [
-        "./add.ts",
-        "./index.ts",
-        "./mult.ts"
+        "./src/add.ts",
+        "./src/index.ts",
+        "./src/mult.ts"
     ]
 }

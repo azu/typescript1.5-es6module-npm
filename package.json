@@ -31,7 +31,11 @@
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.4",
     "typescript": "^1.5.0-alpha",
+    "typescript-simplify": "azu/typescript-simplify",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "through": "^2.3.6"
   }
 }
