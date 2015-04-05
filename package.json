@@ -18,11 +18,20 @@
     "test": "test"
   },
   "scripts": {
-    "build":"tsc --project src",
-    "watch":"tsc --project src -w",
+    "build": "tsc --project ./src && browserify lib/*.js -o build/bundle.js",
+    "build:gulp": "gulp build",
+    "watch": "tsc --project ./src -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "typescript": "^1.5.0-alpha"
+    "browserify": "^9.0.7",
+    "gulp": "^3.8.11",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-typescript": "^2.6.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "typescript": "^1.5.0-alpha",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }
